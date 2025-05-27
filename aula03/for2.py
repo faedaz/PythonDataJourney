@@ -17,3 +17,4 @@ r = int(input("Digite a razao: "))
 for n in range(1, 11):
     termo = p + (n - 1) * r
     print(termo)
+    
