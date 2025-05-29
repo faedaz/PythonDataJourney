@@ -1,16 +1,18 @@
-#Faça um programa que leia 5 números e informe o maior número.
-numeros = []
+#Peça ao usuário um número e exiba uma mensagem dizendo se ele é positivo.
+try:
+    lista_n = []
+    n1 = int(input("Digite n1: "))
+    lista_n.append(n1)
 
-for i in range(5):
-    numero = int(input(f"Digite o numero: "))
-    numeros.append(numero)
+    for numero in lista_n:
+        if numero >= 0:
+            positivo = lista_n
+            print(f"Numero {lista_n}")
+        else:
+            negativo = lista_n
+            print(f"Numero: {lista_n}")
+except ValueError:
+    print("Digite um numero valido!")
 
-print(f"{numeros}")
+print(lista_n)
 
-maior = numeros[0]
-
-for numero in numeros:
-    if numero > maior:
-        maior = numero
-
-print(f"O maior numero e: {maior}")
