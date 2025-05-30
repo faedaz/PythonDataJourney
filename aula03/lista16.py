@@ -1,8 +1,19 @@
-#Peça ao usuário os dados de 3 pessoas (nome e idade) e armazene em um dicionário dentro de uma lista. Ao final, mostre o nome da pessoa mais velha.
+#Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.
 
-aluno = {
-    "nome": "Matheus",
-    "notas": [8, 9, 10]
-}
 
-print(aluno)
+numeros = []
+par = 0
+impar = 0
+
+for i in range(0, 10):
+    numero = int(input(f"Digite o numero {i+1}: "))
+    numeros.append(numero)
+    
+    if numero % 2 == 0:
+        par = par + 1
+    else:
+        impar = impar + 1
+    
+print(numeros)
+print(f"Pares: {par}")
+print(f"Impares: {impar}")
